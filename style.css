@@ -1,0 +1,109 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #646669;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+
+    body {
+        background-color: #323437;
+        
+    }
+    .nav {
+        position: fixed;
+        height: 10vh;
+        color: #646669;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .window {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .score {
+        color: #323437;
+        transition: 0.3s;
+    }
+
+    .fa-rotate-right{
+        font-size: 1.6rem;
+        transition: 0.3s;
+    }
+
+    .fa-rotate-right:hover{
+        color: #d1d0c5;
+    }
+
+    .fa-rotate-right:active{
+        scale: 0.9;
+    }
+
+    .restart {
+        height: 150px;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .timer {
+        color: #646669;
+        padding: 10px 0;
+        transition: 0.3s;
+    }
+
+    .content {
+        width: 55%;
+    }
+
+    .letter {
+        font-size: 1.5rem;
+    }
+
+    .white {
+        color: #d1d0c5;
+    }
+
+    .red-bg {
+        background-color: rgb(202, 71, 84, 0.3);
+    }
+
+    .yellow {
+        color: #e2b714;
+    }
+
+    .red {
+        color: #ca4754;
+    }
+
+    .grey {
+        color: #646669
+    }
+
+    .cursor {
+        animation:  blink 0.85s infinite;
+    }
+
+    @keyframes blink {
+        0% {
+            border-left: 2px solid #e2b714;
+        }
+
+        50% {
+            border-left: 2px solid #323437;
+        }
+
+        100% {
+            border-left: 2px solid #e2b714;
+        }
+    }
